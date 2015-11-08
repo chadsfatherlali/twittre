@@ -8,12 +8,12 @@
 
 include_once 'TwitterOAuth.php';
 
-$consumer = 'UacUG3wWt4v7xFNtfMKR115Le';
-$consumersecret = 'JQ7y8bxjRdvhodiNxViIL1YgZMj1jEORsQ7APhtYiLqUhojSlP';
-$accestoken = '2320470469-0kTEEfX94A0V9r5rymxW4aljgyfprXfjLYwOkMf';
-$accestokensecret = 'OOaRmHonSk6dhTCD5dOkCgKp4IH8EeDwsUUmLZdGBaJlZ';
+$consumer = 'CONSUMER_KEY';
+$consumersecret = 'CONSUMER_SECRET';
+$accesstoken = 'ACCESS_TOKEN';
+$accesstokensecret = 'ACCESS_SECRET';
 
-$twitter = new TwitterOAuth($consumer, $consumersecret, $accestoken, $accestokensecret);
+$twitter = new TwitterOAuth($consumer, $consumersecret, $accesstoken, $accesstokensecret);
 
 $result1 = $twitter->get(
     'statuses/home_timeline', array(
